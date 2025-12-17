@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- favicon/manifest (CRA의 %PUBLIC_URL% 제거하고 / 로 시작) -->
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>JaeGyun's Portfolio</title>
+
+    <!-- CRA에서 쓰던 CSS 그대로 -->
+    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/media-queries.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+
+    <!-- modernizr -->
+    <script src="/js/modernizr.js"></script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- ✅ Vite 엔트리 -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- CRA에서 쓰던 jQuery/플러그인 스크립트들 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="/js/jquery-1.10.2.min.js"><\\/script>');
+    </script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+    <script src="/js/waypoints.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/magnific-popup.js"></script>
+    <script src="/js/init.js"></script>
+  </body>
+</html>
